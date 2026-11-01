@@ -28,6 +28,12 @@ The measurement script needs Python 3.10 or later. It has no third-party depende
 | `evals/` | Test cases in `claude plugin eval` layout |
 | `CHANGELOG.md` | Version history and the review decisions behind each change |
 
+## How the copies relate
+
+The Claude app is the distribution channel. The `.skill` package built from this repo is uploaded there and the app syncs it to each machine's `~/.claude/skills/synced/` folder, where Claude Code loads it. This repo is the development clone and should not itself sit inside `~/.claude/skills` on a machine that also receives the synced copy, or the skill will load twice. The `massif-house-style` plugin in `wmthomson22/massif-claude-plugins` carries a copy of the same files for plugin installs; update it from this repo when a version ships.
+
+Release steps: bump `metadata.version` in `SKILL.md`, add the entry to `CHANGELOG.md`, commit, tag `vX.Y.Z`, push with tags, build the `.skill` package (everything except `.git`, `evals/` and `.gitignore`, zipped under a `massif-voice/` root), upload it in the Claude app, and copy the skill files into the plugin repo.
+
 ## Updating the profile
 
 If the corpus folder grows, recompute the targets and paste them into `TARGETS` in the script:
