@@ -2,14 +2,14 @@
 name: massif-voice
 description: "Massif Capital's house voice, which is Will Thomson's writing voice. Rewrites, adapts, or drafts prose so it reads as Will's own: tone, sentence rhythm, grammar habits, vocabulary, stance, and how he argues. Built from 42 of his published letters and papers (2016 to 2026) and designed against the research on AI-prose traits and on the Pangram 4 detector. Use whenever Will asks to put something 'in my voice', 'make this sound like me', 'rewrite this as if I wrote it', 'humanize', 'de-AI', 'adapt this draft', 'Massif voice', 'house style', 'our voice', to turn notes into prose, to convert an AI or third-party draft into something he can send, or whenever substantive prose goes out under Will's or Massif's name (investor letters, memos, research notes, position write-ups, essays, investor emails, LinkedIn posts). Also use it when he asks whether text reads as AI-written or will pass a detector. Default to it for any rewrite or drafting request from Will. Not for code, tables, disclaimers, or raw data."
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
   author: "Will Thomson, Massif Capital"
   changelog: "CHANGELOG.md"
 ---
 
 # Massif Voice
 
-Version 1.0.1 (2026-11-01). Version history is in `CHANGELOG.md`; bump the version there and in the frontmatter together when the skill changes. This skill replaces the earlier `massif-voice` skill (2026-08 to 2026-10), which was rule-based and drew its anti-AI list from the blader/humanizer repository; see the Coordination section for what was carried over and what was dropped.
+Version 1.0.2 (2026-11-01). Version history is in `CHANGELOG.md`; bump the version there and in the frontmatter together when the skill changes. This skill replaces the earlier `massif-voice` skill (2026-08 to 2026-10), which was rule-based and drew its anti-AI list from the blader/humanizer repository; see the Coordination section for what was carried over and what was dropped.
 
 This skill turns a piece of text into something Will Thomson would plausibly have written himself. The input can be an AI draft, a colleague's draft, a published article to be reacted to, Will's own rough notes, or Will's own finished draft that needs tightening. The output is prose in his voice, and nothing else: no preamble, no "here is the rewrite", no closing offer.
 
@@ -106,10 +106,10 @@ Read the reference file for the mechanics. The operational summary:
 4. Run the measurement script on the draft and compare it to his profile:
 
    ```
-   uv run "C:/Users/WilliamThomson/.claude/skills/massif-voice/scripts/style_check.py" <draft.md>
+   uv run <skill folder>/scripts/style_check.py <draft.md>
    ```
 
-   Add `--register personal` for emails and posts; it relaxes the letter-register rhythm bands and keeps the hard checks. (`python` works too if `uv` is unavailable.) It reports sentence-length distribution, paragraph distribution, punctuation rates, hedge density, dash count, retired-phrase hits, AI-vocabulary hits, participial-clause rate and a few structural tells, each against the corpus target with a flag when the draft is outside the band. The numbers are a diagnostic, not a target to game: if the variance is low, go back and rewrite sentences, do not splice random short fragments in.
+   The skill folder is wherever this SKILL.md lives: `~/.claude/skills/massif-voice` for a direct install (on Will's machine, `C:/Users/WilliamThomson/.claude/skills/massif-voice`), or `${CLAUDE_PLUGIN_ROOT}/skills/massif-voice` inside the massif-house-style plugin. Add `--register personal` for emails and posts; it relaxes the letter-register rhythm bands and keeps the hard checks. (`python` works too if `uv` is unavailable; the script has no dependencies.) It reports sentence-length distribution, paragraph distribution, punctuation rates, hedge density, dash count, retired-phrase hits, AI-vocabulary hits, participial-clause rate and a few structural tells, each against the corpus target with a flag when the draft is outside the band. The numbers are a diagnostic, not a target to game: if the variance is low, go back and rewrite sentences, do not splice random short fragments in.
 5. Read the result once as Will reading it in the morning. Cut anything he would not say. Run the manufactured-cleverness test on every sentence that feels pointed: delete it, see what is lost. Check the verdict is a verdict with content in it. Check for dashes one last time.
 6. Return the prose only. If the brief was thin and you made assumptions, add a single line after the prose, visibly separate, listing them.
 
