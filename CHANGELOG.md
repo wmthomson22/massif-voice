@@ -2,6 +2,10 @@
 
 All notable changes to the massif-voice skill. Versions follow semantic versioning: patch for wording and calibration fixes, minor for new rules or reference material, major for a change in how the skill is meant to be used. The version lives in two places that must agree: `metadata.version` in `SKILL.md` frontmatter and the top entry here.
 
+## 1.0.1 (2026-11-01)
+
+- Shortened the frontmatter description to under 1,024 characters so the skill packages for the Claude app (claude.ai), which enforces that limit. Triggers unchanged.
+
 ## 1.0.0 (2026-11-01)
 
 First release of the corpus-built skill, replacing the rule-based massif-voice skill of 2026-08 to 2026-10.

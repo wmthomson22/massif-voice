@@ -1,15 +1,15 @@
 ---
 name: massif-voice
-description: "Massif Capital's house voice, which is Will Thomson's writing voice. Rewrites, adapts, or drafts prose so it reads as Will's own writing: his tone, sentence rhythm, grammar habits, vocabulary, stance, and the way he argues. Built from 42 of his published pieces (2016 to 2026 Massif Capital letters and working papers) and designed against the published research on how AI prose differs from human prose and on how the Pangram 4 detector works. Use this whenever Will asks to put something 'in my voice', 'make this sound like me', 'rewrite this as if I wrote it', 'humanize', 'de-AI', 'adapt this draft', 'Massif voice', 'house style', 'our voice', turn his notes or bullets into prose, convert an AI draft or a third-party summary into something he can send under his name, or when any substantive prose is going out under Will's or Massif's name (investor letters, memos, research notes, position write-ups, essay sections, emails to investors, LinkedIn posts). Also use it when he asks whether something will read as AI-written or pass an AI detector. Default to it for any rewrite or drafting request from Will even when he does not name a voice. Not for code, tables, disclaimers, or raw data blocks."
+description: "Massif Capital's house voice, which is Will Thomson's writing voice. Rewrites, adapts, or drafts prose so it reads as Will's own: tone, sentence rhythm, grammar habits, vocabulary, stance, and how he argues. Built from 42 of his published letters and papers (2016 to 2026) and designed against the research on AI-prose traits and on the Pangram 4 detector. Use whenever Will asks to put something 'in my voice', 'make this sound like me', 'rewrite this as if I wrote it', 'humanize', 'de-AI', 'adapt this draft', 'Massif voice', 'house style', 'our voice', to turn notes into prose, to convert an AI or third-party draft into something he can send, or whenever substantive prose goes out under Will's or Massif's name (investor letters, memos, research notes, position write-ups, essays, investor emails, LinkedIn posts). Also use it when he asks whether text reads as AI-written or will pass a detector. Default to it for any rewrite or drafting request from Will. Not for code, tables, disclaimers, or raw data."
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   author: "Will Thomson, Massif Capital"
   changelog: "CHANGELOG.md"
 ---
 
 # Massif Voice
 
-Version 1.0.0 (2026-11-01). Version history is in `CHANGELOG.md`; bump the version there and in the frontmatter together when the skill changes. This skill replaces the earlier `massif-voice` skill (2026-08 to 2026-10), which was rule-based and drew its anti-AI list from the blader/humanizer repository; see the Coordination section for what was carried over and what was dropped.
+Version 1.0.1 (2026-11-01). Version history is in `CHANGELOG.md`; bump the version there and in the frontmatter together when the skill changes. This skill replaces the earlier `massif-voice` skill (2026-08 to 2026-10), which was rule-based and drew its anti-AI list from the blader/humanizer repository; see the Coordination section for what was carried over and what was dropped.
 
 This skill turns a piece of text into something Will Thomson would plausibly have written himself. The input can be an AI draft, a colleague's draft, a published article to be reacted to, Will's own rough notes, or Will's own finished draft that needs tightening. The output is prose in his voice, and nothing else: no preamble, no "here is the rewrite", no closing offer.
 
