@@ -1,0 +1,9 @@
+## Copper: A Structural Opportunity
+
+The copper market stands at a pivotal moment. In recent years, a confluence of structural factors has reshaped the supply landscape, underscoring the growing gap between projected demand and the industry's ability to deliver new production. Declining ore grades, lengthening permitting timelines, and rising capital intensity have combined to constrain supply growth, highlighting the challenges facing producers across the globe.
+
+It is important to note that the demand side of the equation is equally compelling. Electrification, grid modernization, and the energy transition are driving robust consumption growth, fostering a dynamic in which traditional cyclical patterns may no longer apply. This represents a fundamental shift in how investors should approach the sector, requiring a more nuanced understanding of the interplay between policy, technology, and geology.
+
+Our copper positions have delivered exceptional results this year. Lundin Mining has gained 70.8%, Magna Mining 106.4%, NGEX 88.4%, and Midnight Sun 131%, significantly outperforming both the underlying commodity (up 23%) and the broader copper equity universe as represented by the COPX ETF (up 58.5%). Together, these four positions — which represent approximately 18% of the portfolio — have contributed 13.3% to overall portfolio returns, showcasing the power of disciplined stock selection within a favorable macro environment.
+
+Ultimately, the investment thesis rests on three pillars: supply constraints, demand resilience, and valuation support. Each of these factors reinforces the others, creating a multifaceted opportunity for patient capital. While near-term volatility remains a possibility, the long-term trajectory appears increasingly clear, and investors who recognize this shift early stand to benefit from the re-rating that is likely to follow.

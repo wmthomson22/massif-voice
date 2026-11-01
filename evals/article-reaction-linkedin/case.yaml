@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: article-reaction-linkedin
+expected_outcome: |
+  A LinkedIn post under 250 words in first person that quotes or cites the FT piece briefly (the A$39bn figure, the 28% premium, or the "scale matters" line) and then argues Will's capital-cycle point: majors buying ounces rather than building them, premiums paid at the top of the cycle precede falling returns. States what Massif owns instead (Equinox, G Mining) without turning it into a pitch. Dry rather than snarky. Sentence lengths vary; at least one short declarative. No em-dashes, no hashtags-as-argument, no "thoughts?" style closer, no AI vocabulary, no emoji.
+context:
+  scaffold_script: place-files.sh

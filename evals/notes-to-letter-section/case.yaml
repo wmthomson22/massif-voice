@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: notes-to-letter-section
+expected_outcome: |
+  A letter section on Enovix built from the notes with Will's own phrases retained close to verbatim where usable ("costs more on its own than all the shorts combined", "the thesis depends on commercial validation that has yet to arrive", "sitting on a gain and got complacent" or near it, "either answer means the position gets cut"). The admission of error is plain and early, in short declaratives, with no softening language. Numbers are digits with % and $. The section states what would change the view and ends on a position (not adding, not selling, why), not a summary. No em-dashes, no AI vocabulary, no invented facts beyond the notes.
+context:
+  scaffold_script: place-files.sh
